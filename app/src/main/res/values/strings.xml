@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PrimeiraApp</string>
+    <string-array name="Filmes">
+        <item>Mulher Maravilha</item>
+        <item>Superman</item>
+        <item>Batman</item>
+        <item>Lanterna Verde</item>
+        <item>Aquaman</item>
+        <item>Flash</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestaBotao_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlbPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Selecione o sexo"
+        android:textSize="30dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdbMasculino"
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/rdbFeminino"
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione:"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3">
+
+        <TableRow>
+
+    <CheckBox
+        android:id="@+id/chkMusica"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Música" />
+
+    <CheckBox
+        android:id="@+id/chkFutebol"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Futebol" />
+
+    <CheckBox
+        android:id="@+id/chkCorrida"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Corrida" />
+
+        </TableRow>
+
+        <TableRow>
+
+    <CheckBox
+        android:id="@+id/chkBicicleta"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bicicleta" />
+
+    <CheckBox
+        android:id="@+id/chkBarco"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Barco" />
+
+    <CheckBox
+        android:id="@+id/chkParaquedas"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paraquedas" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/spnFilmes"
+        android:entries="@array/Filmes"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+
+    </Spinner>
+
+    <Switch
+        android:id="@+id/swtSom"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Som"
+        android:checked="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/botaoteste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@color/botao"
+            android:src="@drawable/ic_email_dp"
+            style="@style/Widget.Design.FloatingActionButton"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
